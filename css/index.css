@@ -1,0 +1,69 @@
+body, html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family:OpenSansCondensed;
+}
+.black-cover{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+.pages__content{
+  font-size: 34px;
+  text-align: center;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  position: relative;
+  z-index: 3;
+}
+
+.content__title{
+  position: relative;
+  top: 42%;
+}
+.content__description{
+  position: relative;
+  top: 45%;
+  color: grey;
+  font-size: 15px;
+}
+.content__bread-right{
+  position: absolute;
+  right: 0;
+  transform: rotate(90deg);
+  width: 31px;
+  font-size: 16px;
+}
+.content__bread-left{
+  position: absolute;
+  left: 0;
+  transform: rotate(270deg);
+  font-size: 16px;
+}
+.content__bread-top{
+  transform: rotate(0deg);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  font-size: 16px;
+}
+.content__bread-bottom{
+  transform: rotate(0deg);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  font-size: 16px;
+}
+
+.pages1{
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg1.jpg");
+
+}
