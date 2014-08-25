@@ -1,16 +1,34 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="stylesheet" href="css/slidePager.css" type="text/css">
 <link rel="stylesheet" href="css/index.css" type="text/css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="js/touchwipe.js"></script>
-<script src="js/slidePager.js"></script>
+<script type="text/javascript" src="js/touchwipe.js"></script>
+<script type="text/javascript" src="js/slidePager.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<script>
+$(function(){
+  $(window).on("load resize", function(){
+    $(".content__bread-right").css({
+      'top': $(".content__bread-right").height()/2 + $(window).height()/2
+    })
+    $(".content__bread-left").css({
+      'top': $(".content__bread-left").height()/2 + $(window).height()/2
+    })
+  });
+});
+</script>
 </head>
 
-<body>
+<body onContextmenu="return false">
+<div id="smoke">
+</div>
+
+<!-- 1page -->
 <div class="pages pages1 active" data-js="1111">
   <div class="black-cover"></div>
   <div class="pages__content content">
@@ -26,28 +44,178 @@
     <div class="content__bread-left">Hobby</div>
   </div>
 </div>
-<div class="pages" data-js="2111">
-  <div class="pages__content">
-    たねいちです。
+<!-- 2page -->
+<div class="pages pages2" data-js="1121">
+  <div class="black-cover"></div>
+  <div class="pages__content content">
+    <div class="content__title">
+      About
+    </div>
+    <div class="content__description">
+        はじめまして。
+        たにしといいます。
+        背景画像の整地として有名な、
+        とある醤油工場の傍で
+        細々と大学生をやっています。<br><br>
+        家事苦手 部屋汚い 授業に出ない<br><br>
+        といいことなしのクズですが、<br>
+        サークルの皆さんや、<br>
+        近隣住民の皆さんの支えを持ってして自分は生きています。<br><br>
+
+        内輪の事が多くてつまらないと思いますが、<br>
+        興味がわきましたら是非フォローしてください。<br>
+    </div>
+    <div class="content__bread-right"></div>
+    <div class="content__bread-top">Copyright</div>
+    <div class="content__bread-bottom"></div>
+    <div class="content__bread-left">Wellcome</div>
   </div>
 </div>
-<div class="pages" data-js="1211">1211</div>
-<div class="pages" data-js="1311">1311</div>
-<div class="pages" data-js="1121">1121</div>
-<div class="pages" data-js="1221">1221</div>
+
+<!-- 3page -->
+<div class="pages pages3" data-js="1211">
+  <div class="black-cover"></div>
+  <div class="pages__content content">
+    <div class="content__title">
+      HomePage
+    </div>
+    <div class="content__description">
+      UnderConstruction....
+    </div>
+    <div class="content__bread-right">Copyright</div>
+    <div class="content__bread-top"></div>
+    <div class="content__bread-bottom">Wellcome</div>
+    <div class="content__bread-left">Music</div>
+  </div>
+</div>
+<!-- 4page -->
+<div class="pages pages4" data-js="1221">
+  <div class="black-cover"></div>
+  <div class="pages__content content">
+    <div class="content__title">
+      Copyright
+    </div>
+    <div class="content__description">
+      Copyright © 2014<br> Tanishi All Rights Reserved.
+    </div>
+    <div class="content__bread-right"></div>
+    <div class="content__bread-top"></div>
+    <div class="content__bread-bottom">Wellcome</div>
+    <div class="content__bread-left">HomePage</div>
+  </div>
+</div>
+<!-- 5page -->
+<div class="pages pages5" data-js="2111">
+  <div class="black-cover"></div>
+  <div class="pages__content content">
+    <div class="content__title">
+      Hobby
+    </div>
+    <div class="content__description">
+      A wide range of interest.
+    </div>
+    <div class="content__bread-right">Wellcome</div>
+    <div class="content__bread-top">Music</div>
+    <div class="content__bread-bottom">Programming</div>
+    <div class="content__bread-left">Movie</div>
+  </div>
+</div>
+<!-- 6page -->
+<div class="pages pages6" data-js="2211">
+  <div class="black-cover"></div>
+  <div class="pages__content content">
+    <div class="content__title">
+      Music
+    </div>
+    <div class="content__description">
+      Bassをやっています。<br>
+      LUNKHEADやSEBASTIANX、ガガガSP、相対性理論等が好きですが、<br>
+      大学のサークルではもっぱらアニソン担当になっています。<br>
+      パンクやメタルもやってみたいです。<br>
+      私用で部会には出られませんが、音楽研究会のみなさん、<br>
+      気軽にお声かけください。<br>
+      友達になってくれるととても嬉しいです。
+    </div>
+    <div class="content__bread-right">HomePage</div>
+    <div class="content__bread-top"></div>
+    <div class="content__bread-bottom">Hobby</div>
+    <div class="content__bread-left"></div>
+  </div>
+</div>
+<!-- 7page -->
+<div class="pages pages7" data-js="2112">
+  <div class="black-cover"></div>
+  <div class="pages__content content">
+    <div class="content__title">
+      Programming
+    </div>
+    <div class="content__description">
+      プログラミングを大学から始めました。<br>
+      出先では主にフロントエンドエンジニアとして<br>
+      Haml, Sass, Coffeeを用いてコーディング作業をしています。<br>
+      他には趣味で、enchantJSでゲーム作りや、<br>
+      Arduinoによる電子工作プログラミングをしています。<br>
+      BackBoneとSwift勉強中です。<br>
+      来年までには、Railsで<br>
+      何か簡単なサービスを作ってデプロイしてみたいなあ。
+    </div>
+    <div class="content__bread-right">Contact</div>
+    <div class="content__bread-top">Hobby</div>
+    <div class="content__bread-bottom"></div>
+    <div class="content__bread-left"></div>
+  </div>
+</div>
+<!-- 8page -->
+<div class="pages pages8" data-js="1112">
+  <div class="black-cover"></div>
+  <div class="pages__content content">
+    <div class="content__title">
+      Contact
+    </div>
+    <div class="content__description">
+      Twitter : @umask_0004<br>
+      Github  : @gamerinshaft
+    </div>
+    <div class="content__bread-right"></div>
+    <div class="content__bread-top">Wellcome</div>
+    <div class="content__bread-bottom"></div>
+    <div class="content__bread-left">Programming</div>
+  </div>
+</div>
+<!-- 8page -->
+<div class="pages pages9" data-js="3111">
+  <div class="black-cover"></div>
+  <div class="pages__content content">
+    <div class="content__title">
+      Movie
+    </div>
+    <div class="content__description">
+      Monster(5/30)<br><br>
+      レ・ミゼラブル(7/14)<br><br>
+      Steve Jobs (8/8)<br><br>
+      I am Sam (8/11)<br><br>
+      奇跡のシンフォニー(8/21)<br><br>
+    </div>
+    <div class="content__bread-right">Hobby</div>
+    <div class="content__bread-top"></div>
+    <div class="content__bread-bottom"></div>
+    <div class="content__bread-left"></div>
+  </div>
+</div>
 
 
+
+<img src="img/horizontal-1.png">
 <script>
 $(function(){
-  $(window).on("load resize", function(){
-    $(".content__bread-right").css({
-      'top': $(".content__bread-right").height()/2 + $(window).height()/2
-    })
-    $(".content__bread-left").css({
-      'top': $(".content__bread-left").height()/2 + $(window).height()/2
-    })
+  $("#smoke").animate({
+    opacity: 0,    // 透明度0.25へ
+    // height: 'toggle'  // (カスタムアニメーション)
+   }, 1000, function() {
+    $(this).css({
+      'display' : 'none'
+    });
   });
-
   var canDo = true;
   $(window).on("transfinish", function(){
     canDo = true;
@@ -80,21 +248,25 @@ $(function(){
   $("body").touchwipe({
     wipeLeft: function() {
       if(canDo){
+        // alert(pager.number);
         pager.shiftRight();
       }
     },
     wipeRight: function() {
       if(canDo){
+        // alert(pager.number);
         pager.shiftLeft();
       }
     },
     wipeUp: function() {
       if(canDo){
+        // alert("hoge");
         pager.shiftUp();
       }
     },
     wipeDown: function() {
       if(canDo){
+        // alert("hoge");
         pager.shiftDown();
       }
     },

@@ -5,6 +5,13 @@ body, html{
   height: 100%;
   font-family:OpenSansCondensed;
 }
+#smoke{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: black;
+}
 .black-cover{
   position:absolute;
   width: 100%;
@@ -28,13 +35,36 @@ body, html{
 .content__description{
   position: relative;
   top: 45%;
-  color: grey;
+  color: #eee;
   font-size: 15px;
+  width: 65%;
+  margin: 0 auto;
+}
+.pages1 .content__description, .pages3 .content__description{
+  color: grey;
+}
+.pages2 .content__title, .pages6 .content__title, .pages7 .content__title, .pages9 .content__title{
+  top: 19%;
+}
+.pages2 .content__description, .pages6 .content__description, .pages7 .content__description, .pages9 .content__description{
+  position: relative;
+  top: 20%;
+  color: #eee;
+  font-size: 15px;
+  text-align: center;
+}
+@media screen and (max-width: 600px){
+  .pages2 .content__description, .pages6 .content__description, .pages7 .content__description{
+    text-align: left;
+  }
 }
 .content__bread-right{
   position: absolute;
   right: 0;
   transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
   width: 31px;
   font-size: 16px;
 }
@@ -42,6 +72,9 @@ body, html{
   position: absolute;
   left: 0;
   transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
   font-size: 16px;
 }
 .content__bread-top{
@@ -65,5 +98,39 @@ body, html{
   background-size: cover;
   background-position: center;
   background-image: url("../img/bg1.jpg");
-
+}
+.pages2{
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg2.jpg");
+}
+.pages3{
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg3.jpg");
+}
+.pages5{
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg5.jpg");
+}
+.pages6{
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg6.jpg");
+}
+.pages7{
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg7.jpg");
+}
+.pages8{
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg8.jpg");
+}
+.pages9{
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/bg9.jpg");
 }

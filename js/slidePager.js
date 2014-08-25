@@ -76,7 +76,9 @@
           };
         })(this));
         this.number += num;
-        return this.$dataname(this.number).addClass("active");
+        this.$dataname(this.number).addClass("active");
+        e = $.Event("transfinish");
+        return $(window).trigger(e);
       }
     };
 

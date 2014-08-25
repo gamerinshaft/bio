@@ -55,10 +55,11 @@ class window.SlidePager
       @$dataname(@number).addClass("move"+dir).on "transitionend", =>
         @$dataname(@number-num).removeClass("active")
         @$dataname(@number-num).removeClass("move"+dir)
-        e = $.Event( "transfinish" );
-        $(window).trigger( e );
+        e = $.Event( "transfinish" )
+        $(window).trigger( e )
       @number += num
       @$dataname(@number).addClass("active")
+
 
 
 

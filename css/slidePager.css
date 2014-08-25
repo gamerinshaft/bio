@@ -1,23 +1,25 @@
 
 .active{
   z-index:3;
-  opacity: 1 !important;
+  display: block !important;
 }
+
 .pages{
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  opacity:0;
+  /*transition: transform 0.6s ease;*/
   -webkit-transition: -webkit-transform 0.6s ease;
-    -moz-transition: -moz-transform 0.6s ease;
-    -ms-transition: -ms-transform 0.6s ease;
-    -o-transition: -o-transform 0.6s ease;
+  -moz-transition: -moz-transform 0.6s ease;
+  -ms-transition: -ms-transform 0.6s ease;
+  -o-transition: -o-transform 0.6s ease;
   height: 100%;
   width: 100%;
   color: rgb(48, 36, 36);
-  background-color: white;
+  background-color: black;
 }
 
 .moveRight{
